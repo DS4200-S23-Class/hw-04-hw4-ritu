@@ -22,34 +22,100 @@
     <!-- Creates columns -->
     <div class="row">
         <div class= "column left">
-            <svg width="700" height="700">
+            <svg class="points" width="700" height="700">
 
                 <!-- Represents the axis lines -->
                 <line class="axis" x1="50" y1="500" x2="500" y2="500"/>
                 <line class="axis" x1="50" y1 ="500" x2="50" y2="100"/>
 
                 <!--Represents point (1,2) -->
-                <circle cx="90" cy="430" r="10"></circle>
+                <circle id="point1" cx="90" cy="430" r="10"></circle>
                 <!--Represents point (2,4) -->
-                <circle cx="135" cy="370" r="10"></circle>
+                <circle id="point2" cx="135" cy="370" r="10"></circle>
                 <!--Represents point (6,2) -->
-                <circle cx="310" cy="430" r="10"></circle>
+                <circle id="point3" cx="310" cy="430" r="10"></circle>
                 <!--Represents point (9,9) -->
-                <circle cx = "450" cy= "130" r="10"></circle>
+                <circle id="point4" cx = "450" cy= "130" r="10"></circle>
                 
             </svg>
 
         </div>
 
-        <div class="column right">
+        <div id="right-col" class="column right">
+        </div>
+
+        <div id="right-col2" class="column right">
+            <form id="form-coordinates">
+            Select the x-coordinate for the point you want to add. 
+            <!-- get user input to specify an x and y value in the range 1 to 9 -->
+            <select id="user_x" name="user_x"/>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+
+            <br>
+            <br>
+
+            Select the y-coordinate for the point you want to add. 
+            <select id="user_y" name="user_y"/>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
             
+            <br>
+            <br>
+
+            <!-- create a button -->
+            <button type="button" id="addButton">Add Point</button>
+
+            </form>
         </div>
 
 
     </div>
     
 
+    <div>
+        <!-- Creates a new section for the Acknowledgements which shows an unordered list of resources used in this assignment. -->
 
+        <h1 id= "acknowledgements">Acknowledgements</h1>
+
+        <div>
+
+        <ul>
+            <li>
+                <a href="https://www.geeksforgeeks.org/how-to-get-selected-value-in-dropdown-list-using-javascript/">https://www.geeksforgeeks.org/how-to-get-selected-value-in-dropdown-list-using-javascript/</a>
+            </li>
+
+            <li>
+                <a href="https://www.w3schools.com/html/html_form_elements.asp">https://www.w3schools.com/html/html_form_elements.asp</a>
+            </li>
+
+            <li>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else</a>
+
+            </li>
+
+        </ul>
+
+        </div>
+    </div>
+
+<script src="main.js"></script>
 </body>
 
 </html>
